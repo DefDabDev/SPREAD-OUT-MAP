@@ -28,7 +28,7 @@ public class MapUpLoad : MonoBehaviour
     void Start()
     {
         StringBuilder sb = new StringBuilder();
-        sb.Append("0, ");
+        sb.Append("0,");
         sbSB.Add(sb);
 
     }
@@ -141,7 +141,7 @@ public class MapUpLoad : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Space))
         {
-            sbSB[j].Replace(sbSB[j][3 * i], blockCode, 3 * i, 1);
+            sbSB[j].Replace(sbSB[j][2 * i], blockCode, 2 * i, 1);
 
             StringBuilder sb = new StringBuilder();
             for (int k = 0; k < sbSB.Count; k++)
@@ -156,7 +156,7 @@ public class MapUpLoad : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.R))
         {
-            sbSB[j].Replace(sbSB[j][3 * i], '0', 3 * i, 1);
+            sbSB[j].Replace(sbSB[j][2 * i], '0', 2 * i, 1);
 
             StringBuilder sb = new StringBuilder();
             for (int k = 0; k < sbSB.Count; k++)
@@ -189,9 +189,9 @@ public class MapUpLoad : MonoBehaviour
             sbSB.Add(sb);
         }
 
-        while (sbSB[j].Length <= 3 * i)
+        while (sbSB[j].Length <= 2 * i)
         {
-            sbSB[j].Append("0, ");
+            sbSB[j].Append("0,");
         }
     }
 
