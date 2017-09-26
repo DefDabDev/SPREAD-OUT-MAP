@@ -124,12 +124,12 @@ public class MapUpLoad : MonoBehaviour
             target.transform.position += new Vector3(0, 3);
             j++; check();
         }
-        else if (Input.GetKeyDown(KeyCode.S))
+        else if (Input.GetKeyDown(KeyCode.S) && j > 0)
         {
             target.transform.position -= new Vector3(0, 3);
             j--; check();
         }
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.A) && i > 0)
         {
             target.transform.position -= new Vector3(3, 0);
             i--; check();
